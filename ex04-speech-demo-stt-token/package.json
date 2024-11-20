@@ -1,29 +1,21 @@
 {
-  "name": "speech-sample",
+  "name": "speech-demo-stt-fe-direct",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "axios": "^1.4.0",
-    "bootstrap": "^5.3.0",
-    "dotenv": "^16.3.1",
-    "microsoft-cognitiveservices-speech-sdk": "^1.32.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.0.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "reactstrap": "^9.2.0",
-    "universal-cookie": "^4.0.4",
-    "web-vitals": "^3.3.2"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "node-env-run server --exec nodemon | pino-colada",
-    "dev": "run-p server start"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -44,17 +36,6 @@
     ]
   },
   "devDependencies": {
-    "body-parser": "^1.20.2",
-    "express": "^4.18.2",
-    "express-pino-logger": "^7.0.0",
-    "node-env-run": "^4.0.2",
-    "nodemon": "^3.0.1",
-    "npm-run-all": "^4.1.5",
-    "pino-colada": "^2.2.2",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  },
-  "overrides": {
-    "css-select": "^5.1.0"
-  },
-  "proxy": "http://localhost:3001"
+    "microsoft-cognitiveservices-speech-sdk": "^1.38.0"
+  }
 }
