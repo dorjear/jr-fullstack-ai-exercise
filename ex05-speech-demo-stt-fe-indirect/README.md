@@ -11,6 +11,19 @@ This sample shows how to integrate the backend for speech-to-text conversions.
 
 This sample updates the solution of previous lab. Use react-mic to record audio and send the file to the backend to handle.
 
+Add ReactMic component to record audio
+```html
+  <ReactMic
+    record={recording}
+    className="sound-wave"
+    onStop={onStop}
+    mimeType="audio/webm"
+    strokeColor="#FF0000"
+    backgroundColor="#000000"
+  />
+```
+
+Add handler to handle the voice upload when stop recording
 ```javascript
 const onStop = async (recordedBlob) => {
   console.log('Recorded Blob: ', recordedBlob);

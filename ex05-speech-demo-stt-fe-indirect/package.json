@@ -51,7 +51,8 @@
     "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5",
     "pino-colada": "^2.2.2",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "react-mic": "^12.4.6"
   },
   "overrides": {
     "css-select": "^5.1.0"
