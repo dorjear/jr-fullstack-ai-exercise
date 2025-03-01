@@ -1,15 +1,12 @@
-## Run the project
-Replace the "SubscriptionKey" and "Region" in appsettings.json
-dotnet build
-dotnet run
+# Speech service server with NodeJS
 
-## Project setup: 
-dotnet new webapi -n speech-demo-be-dotnet
-cd speech-demo-be-dotnet
-dotnet add package Microsoft.CognitiveServices.Speech
-dotnet add package Microsoft.AspNetCore.Cors
-dotnet add package Xabe.FFmpeg
-dotnet run
+This sample shows how to integrate the backend for speech-to-text conversions.
+
+## How to run the app
+
+1. Clone this repo, then change directory to the project root and run `npm install` to install dependencies.
+2. Update your Azure secret key to the AZURE_SPEECH_KEY in the .env file
+3. To run the Express server run `node index.js`.
 
 ## Token exchange process
 
@@ -19,8 +16,4 @@ The reason for this design is to prevent your speech key from being exposed on t
 
 In the request, you create a `Ocp-Apim-Subscription-Key` header, and pass your speech key as the value. Then you make a request to the **issueToken** endpoint for your region, and an authorization token is returned. In a production application, this endpoint returning the token should be *restricted by additional user authentication* whenever possible. 
 
-## Backend service to provide speech recognition using Azure AI Service:
-
-        // Create a SpeechRecognizer object
-        // Call recognize.RecognizeOnceAsync() to get the text
-        // return the text or throw exception if something wrong
+Refer to https://learn.microsoft.com/en-us/azure/ai-services/authentication
