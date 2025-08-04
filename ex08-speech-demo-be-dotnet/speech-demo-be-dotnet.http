@@ -1,0 +1,6 @@
+@speech_demo_be_dotnet_HostAddress = http://localhost:5048
+
+GET {{speech_demo_be_dotnet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
