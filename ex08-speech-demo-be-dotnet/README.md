@@ -5,4 +5,4 @@ dotnet run
 
 ## TODOs:
 Update the /upload and /translate endpoint to use openai as the service provide.
-Refer to the TODO: comments
+Refer to the // Implementation comments
